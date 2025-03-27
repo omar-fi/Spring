@@ -64,8 +64,6 @@ public class SpringDataApplication implements CommandLineRunner {
         add.forEach(p->{
             System.out.println(p.toString());
         });
-        System.out.println("adam");
-        System.out.println("Enter product name: ");
 
     }
 }
