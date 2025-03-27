@@ -65,6 +65,7 @@ public class SpringDataApplication implements CommandLineRunner {
             System.out.println(p.toString());
         });
         System.out.println("adam");
+        System.out.println("Enter product name: ");
 
     }
 }
