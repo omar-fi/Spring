@@ -27,6 +27,7 @@ public class SpringDataApplication implements CommandLineRunner {
         //ajouter nouveau produit
         productRepo.save(new Product(null,"omar",2000,4));
         productRepo.save(new Product(null,"mari",2000,5));
+        productRepo.save(new Product(null,"omar",20002,6));
 
         //rechercher les produits existants
         List<Product> products = productRepo.findAll();
@@ -40,7 +41,6 @@ public class SpringDataApplication implements CommandLineRunner {
            System.out.println(p.toString());
        });
 
-
        //Supprimer un produit
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter product id: ");
@@ -50,7 +50,6 @@ public class SpringDataApplication implements CommandLineRunner {
         products3.forEach(p->{
             System.out.println(p.toString());
         });
-
 
         //Ajoute un nouveau produit
         System.out.println("Enter product name: ");
